@@ -17,7 +17,7 @@ app.use(express.static(__dirname + "/public/"));
 // using body-parser.urlencoded to recieve html form data
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGO_URL, (err) => {
+mongoose.connect(`${process.env.MONGO_URL}`, (err) => {
     if (!err) {
         console.log("successfully connected to DB.");
     } else {
