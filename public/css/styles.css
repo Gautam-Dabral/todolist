@@ -1,0 +1,220 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: Finlandica;
+  box-sizing: border-box;
+}
+
+html {
+  background: -webkit-linear-gradient(75deg , rgb(37, 23, 190) 50%, rgb(255, 255, 255)50%);
+  background-repeat: no-repeat;
+}
+
+.appTitle {
+  margin: 25px auto 0;
+  width: 30%;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #2a0cd5;
+}
+.appTitle h1{
+  font-size: 2.5rem;
+}
+
+.container {
+  /*   border : 3px solid black; */
+  width: 55%;
+  margin: 7% auto 3%;
+  display: flex;
+  height: 500px;
+}
+
+.left {
+  /*   border : 3px solid black; */
+  flex-basis: 42%;
+}
+
+.right {
+  /*   border : 3px solid black; */
+  flex-basis: 42%;
+  margin-left: 16%;
+}
+
+.heading {
+  width: 100%;
+  height: 12%;
+  margin-bottom: 5%;
+  text-align: center;
+  justify-content: center;
+  padding: 2.5%;
+  border-radius: 15px;
+  background-color: #2a0cd5;
+  box-shadow: 1px 3px 21px -5px rgba(0, 0, 0, 1);
+  /*   border: 2px solid green; */
+}
+
+.heading h2 {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1.2px black;
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  padding: 15px;
+  box-shadow: 1px 3px 21px -5px rgba(0, 0, 0, 1);
+  /*   border: 2px solid blue; */
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.inputbox {
+  /*   border: 1px solid purple; */
+  padding: 1%;
+  height: 15%;
+}
+
+.inputbox form {
+  /*   border: 1px solid cyan; */
+  display: flex;
+  padding: 2%;
+  height: 100%;
+}
+
+.inputbox form input {
+  flex-basis: 85%;
+  margin-right: 5%;
+  padding-left: 2%;
+}
+
+.inputbox form button {
+  flex-basis: 10%;
+}
+
+.listings {
+  /*   border: 1px solid purple; */
+  margin-top: 2%;
+  height: 83%;
+}
+
+.listing-item {
+  /*   border: 1px solid black; */
+  height: auto;
+  padding: 0.5%;
+  line-height: 1.5;
+}
+
+.listing-name {
+  /*   border: 1px solid cyan; */
+  display: inline-block;
+  width: 65%;
+}
+
+.listing-open,
+.listing-delete {
+  /*   border: 1px solid cyan; */
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}
+
+.listing-delete button {
+  width: 50%;
+}
+
+.listing-open button {
+  width: 50%;
+}
+
+.right .listings input {
+  display: inline-block;
+  width: 10%;
+}
+
+.right .listings p {
+  display: inline-block;
+  width: 70%
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  padding: 1px;
+  background-color: #2a0cd5;
+  font-size: 0.9rem;
+  color: #fff;
+  border: 1px solid #2a0cd5;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.plus {
+  background-color: #2a0cd5;
+  border: 1px solid #2a0cd5;
+}
+
+.minus {
+  background-color: red;
+  border: 1px solid red;
+}
+
+
+@media (max-width: 992px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 65%;
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .right {
+    flex-basis: 90%;
+    height: 90%
+  }
+
+  .right {
+    margin: 0
+  }
+
+  .left,
+  .right {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 547px) {
+  
+  * {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .right {
+    flex-basis: 100%;
+    height: 90%
+  }
+
+  .right {
+    margin: 0
+  }
+
+  .left,
+  .right {
+    margin-bottom: 10%;
+  }
+}
